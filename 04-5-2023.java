@@ -15,7 +15,6 @@ public class Main {
 			}
 		}
 		System.out.println("John ended up on floor " + currentFloor);
-		System.out.println(instructions.length());
 	}
 
 }
