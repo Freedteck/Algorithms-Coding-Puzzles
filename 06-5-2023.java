@@ -73,22 +73,22 @@ public class Race {
 
         // Determine the winner
         if (johnDistance > jamesDistance && johnDistance > joshDistance && johnDistance > jacobDistance && johnDistance > jerryDistance && johnDistance > jennaDistance) {
-            System.out.println("John has won the race!");
+            System.out.println("John won the race with a distance of : " + johnDistance + " meters");
         } 
 		else if(jamesDistance > joshDistance && jamesDistance > jacobDistance && jamesDistance > jerryDistance && jamesDistance > jennaDistance && jamesDistance > johnDistance){
-            System.out.println("James has won the race!");
+            System.out.println("James won the race with a distance of : " + jamesDistance + " meters");
         }
 		else if (joshDistance > johnDistance && joshDistance > jamesDistance && joshDistance > jerryDistance && joshDistance > jennaDistance && joshDistance > jacobDistance) {
-			System.out.println("Josh has won the race!");
+			System.out.println("Josh won the race with a distance of : " + joshDistance + " meters");
 		} 
 		else if (jacobDistance > johnDistance && jacobDistance > jamesDistance && jacobDistance > jennaDistance && jacobDistance > joshDistance && jacobDistance > jerryDistance) {
-			System.out.println("Jacob has won the race!");
+			System.out.println("Jacob won the race with a distance of : " + jacobDistance + " meters");
 		} 
 		else if (jennaDistance > joshDistance && jennaDistance > jacobDistance && jennaDistance > jerryDistance && jennaDistance > jamesDistance && jennaDistance > johnDistance) {
-			System.out.println("Jenna has won the race!");
+			System.out.println("Jenna won the race with a distance of : " + jennaDistance + " meters");
 		} 
 		else if (jerryDistance > joshDistance && jerryDistance > jacobDistance && jerryDistance > jamesDistance && jerryDistance > jennaDistance && jerryDistance > johnDistance) {
-			System.out.println("Jerry has won the race!");
+			System.out.println("Jerry won the race with a distance of : " + jerryDistance + " meters");
 		} 
 		else {
 			System.out.println("It's a tie!");
