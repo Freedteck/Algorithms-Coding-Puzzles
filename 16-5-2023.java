@@ -26,6 +26,8 @@ public class Main {
                 System.out.println(minute + " minute:");
                 printLayout(nextLayout);
                 System.out.println("Repeated layout encountered after " + minute + " minute(s).");
+                int lifeformScore = calculateLifeformScore(nextLayout);
+                System.out.println("Lifeform Score: " + lifeformScore);
                 break;
             } else {
                 layouts.add(nextLayout);
@@ -105,5 +107,23 @@ public class Main {
             }
         }
         return true;
+    }
+
+    private static int calculateLifeformScore(char[][] layout) {
+        int ROWS = layout.length;
+        int COLS = layout[0].length;
+        int lifeformScore = 0;
+
+        for (int row = 0; row < ROWS; row++) {
+            for (int col = 0; col < COLS; col++) {
+                if (layout[row][col] == 'X') {
+                    int tileNumber = row * COLS + col;
+                    int tileValue = (int) Math.pow(2, tileNumber);
+                    lifeformScore += tileValue;
+                }
+            }
+        }
+
+        return lifeformScore;
     }
 }
